@@ -1,0 +1,87 @@
+{
+  "cats": [
+    {
+      "imageURL":
+        "https://vetstreet.brightspotcdn.com/dims4/default/a51a531/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2Fbb%2F4f%2F1be8e8224f729a54b6a9d8c7cbd7%2FAmerican-Bobtail-AP-1J40QF-645sm3614.jpg",
+      "imageDescription":
+        "Grey cat walking",
+      "name": "JerDaniel",
+      "sex": "Male",
+      "age": 2,
+      "breed": "Bobtail",
+      "story": "Found in a box near the side of the road"
+    },
+    {
+      "imageURL":
+        "https://kittywise.com/wp-content/uploads/2019/04/Bombay-Cat.jpeg",
+      "imageDescription": "Black cat sitting in the grass",
+      "name": "Paul",
+      "sex": "Male",
+      "age": 1,
+      "breed": "Bombay",
+      "story": "Owner has too many cats."
+    },
+    {
+      "imageURL": "http://geniusvets.s3.amazonaws.com/gv-cat-breeds/American-Shorthair-1.jpg",
+      "imageDescription":
+        "Grey cat looking deep inside your soul",
+      "name": "Ashy",
+      "sex": "Female",
+      "age": 4,
+      "breed": "Short Hair",
+      "story": "Cat given up for staring too much"
+    },
+    {
+      "imageURL": "https://dbw4iivs1kce3.cloudfront.net/680x/2017/01/Bengal-neige.jpg",
+      "imageDescription":
+        "Spotted cat playing in the snow",
+      "name": "Bennie",
+      "sex": "Female",
+      "age": 3,
+      "breed": "Bengal",
+      "story": "Owner passed away"
+    }
+  ],
+  "dogs": [
+    {
+      "imageURL":
+        "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/03172411/Australian-Shepherd-Care1.jpg",
+      "imageDescription":
+        "An Aussie running around",
+      "name": "Snoop",
+      "sex": "Male",
+      "age": 3,
+      "breed": "Australian Shepherd",
+      "story": "Need larger home"
+    },
+    {
+      "imageURL":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ0hVQz__o40Um-aqkbJC1oEm0F5F44iB3nqjOg2fvdpk_JBwkq",
+      "imageDescription":
+        "Sleeping bulldog",
+      "name": "Princess",
+      "sex": "Female",
+      "age": 5,
+      "breed": "Bulldog",
+      "story": "Junkyard guard dog"
+    },
+    {
+      "imageURL": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Shiba-Inu-2.jpg",
+      "imageDescription": "Shiba Inu wearing a hat",
+      "name": "Roscoe",
+      "sex": "Male",
+      "age": 2,
+      "breed": "Shiba Inu",
+      "story": "Ran away from breeder"
+    },
+    {
+      "imageURL": "https://vetstreet.brightspotcdn.com/dims4/default/d742db0/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F98%2Fd98250a0d311e0a2380050568d634f%2Ffile%2FGolden-Retriever-3-645mk062411.jpg",
+      "imageDescription": "Gold dog laying in the grass",
+      "name": "Shadow",
+      "sex": "Male",
+      "age": 2,
+      "breed": "Golden Retreiver",
+      "story": "Found abandoned at vacant home"
+    }
+  ]
+}

@@ -1,16 +1,51 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const helmet = require('helmet');
 const {PORT} = require('./config');
-const catsRoute = require('./routes/cats/catsRoute');
-const dogsRoute = require('./routes/dogs/dogsRoute');
-const usersRoute = require('./routes/users/usersRoute');
+
+const { Queue, displayQ } = require('./Queue');
+const { cats, dogs } = require('./Store');
+const [ catQ, dogQ ] = [ new Queue(), new Queue() ];
 
 const app = express();
 app.use(cors());
-app.use('/api/cat', catsRoute);
-app.use('/api/dog', dogsRoute);
-app.use('/api/users', usersRoute);
+app.use(helmet());
+
+const catQueue = cats => {
+  for(let i=0; i<cats.length; i++) {
+    catQ.enqueue(cats[i])
+  }
+  return catQ
+};
+
+const dogQueue = dogs => {
+  for(let i=0; i<dogs.length; i++) {
+    dogQ.enqueue(dogs[i])
+  }
+  return dogQ
+};
+
+catQueue(cats);
+dogQueue(dogs);
+
+app.get('/api/cats', (req, res) => {
+  res.json(displayQ(catQ))
+});
+
+app.get('/api/dogs', (req, res) => {
+  res.json(displayQ(dogQ))
+});
+
+app.delete('/api/cats', (req, res) => {
+  catQ.dequeue()
+  res.status(204).end()
+});
+
+app.delete('/api/dogs', (req, res) => {
+  dogQ.dequeue()
+  res.status(204).end()
+});
 
 // Catch-all 404
 app.use(function (req, res, next) {
@@ -29,6 +64,6 @@ app.use(function (err, req, res, next) {
   });
 });
 
-app.listen(8000,()=>{
+app.listen(PORT,()=>{
   console.log(`Serving on ${PORT}`);
 });
