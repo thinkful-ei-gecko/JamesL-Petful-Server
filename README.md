@@ -10,8 +10,11 @@
 
 #### Endpoints
 GET (/api/cats): Retrieve cats in a Queue structure
+
 GET (/api/dogs): Retrieve dogs in a Queue structure
+
 DELETE (/api/cats):  Dequeues cats on a first-in-first-out basis
+
 DELETE (/api/dogs):  Dequeues dogs on a first-in-first-out basis
 
 #### Data
@@ -20,14 +23,24 @@ https://shrouded-anchorage-72118.herokuapp.com/api/dogs
 
 ###### Data Format
   [
+
     {
+
       "imageURL":
         "https://kittywise.com/wp-content/uploads/2019/04/Bombay-Cat.jpeg",
+
       "imageDescription": "Black cat sitting in the grass",
+
       "name": "Paul",
+
       "sex": "Male",
+
       "age": 1,
+
       "breed": "Bombay",
+
       "story": "Owner has too many cats."
+
     }
+    
   ]
